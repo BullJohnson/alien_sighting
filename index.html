@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Alien Sighting</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="alien_sighting.css" rel="stylesheet">
+        <link href="jquery-ui.min.css" rel="stylesheet">
+        <link href="jquery-ui.structure.min.css" rel="stylesheet">
+        <link href="jquery-ui.theme.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+	</head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+
+            </header>
+
+            <form>
+                <fieldset>
+                    <legend>When Did You See It?</legend>
+
+                    <label for="date" class="date_label">Date of Sighting:</label>
+                    <input type="text" id="date" size="10">
+                    <div id="datepicker"></div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How Ugly Was It?</legend>
+                    <h3>Alien Body Type:</h3>
+
+                    <div class="radio_buttons">
+                        <label for="human_like">Human-Like</label>
+                        <input type="radio" name="bodyType" id="human_like" value="Human Like">
+                        
+                        <label for="worm_like">Worm-Like</label>
+                        <input type="radio" name="bodyType" id="worm_like" value="Worm Like">
+                        
+                        <label for="insect_like">Insect-Like</label>
+                        <input type="radio" name="bodyType" id="insect_like" value="Insect Like">
+                    </div>
+                    <br>
+
+                    <div class="radio_buttons">
+                        <label for="fish_like">Fish-Like</label>
+                        <input type="radio" name="bodyType" id="fish_like" value="Fish Like">
+                        
+                        <label for="bird_like">Bird-Like</label>
+                        <input type="radio" name="bodyType" id="bird_like" value="Bird Like">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Alien Description</legend>
+
+                    <br>
+                    <label for="weight" class="align_label">Weight in Pounds:</label>
+                    <div id="weight" name="weight" class="slider"></div>
+                    <p><span id="pounds">50</span>&nbsp;lbs.</p>
+                    
+                    <label for="height" class="align_label">Height in Feet:</label>
+                    <div id="height" name="height" class="slider"></div>
+                    <p><span id="feet">2</span>&nbsp;ft.</p>
+                    <br>
+                
+                    <div class="spinner_controls">
+                        <div>
+                            <label for="eyes" class="align_label">Number of Eyes:</label>
+                            <input type="text" class="spinner" name="eyes" id="eyes" value="2">
+                        </div>
+                        <div>
+                            <label for="arms" class="align_label">Number of Arms:</label>
+                            <input type="text" class="spinner" name="arms" id="arms" value="2">
+                        </div>
+                        <div>
+                            <label for="legs" class="align_label">Number of Legs:</label>
+                            <input type="text" class="spinner" name="legs" id="legs" value="2">
+                        </div>
+                    </div>
+                    <div id="color_wheel"></div>
+
+                    <div class="alien_skin">
+                        <div id="swatch"></div>
+                        <img src="images/alien_swatch_b.png" alt="alien swatch" class="mask">
+                    </div>
+
+                    <label for="color" class="skin_color">Predominant Color of Alien:</label>
+                    <input type="text" name="color" id="color" value="#30a321" disabled>
+                    <br>
+                    <button id="opener">Submit Report</button>
+                    <!--button tries to submit. Either cancel default or use line below, instead-->
+                    <!--<input type="button" id="opener" value="Submit Report"></input>-->
+                    <div id="dialog" title="Your Sighting Has Been Registered">
+                        <div id="results"></div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+        <script src="alien_sighting.js"></script>
+    </body>
+</html>
