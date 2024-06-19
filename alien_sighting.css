@@ -3,79 +3,83 @@
 
 *		{	box-sizing: border-box;}
 
-#wrapper        {   width: 60%;
+
+#wrapper        {   width: 90%;
                     margin: auto;
 }
-
-#datepicker     {   font-size: 10px;
-                    float: right;
-                    margin-right: 15%;
+#date	{	font-size: 4.5vw;
+			text-align: center
 }
-#color_wheel    {   margin-top: 3%;
-                    margin-left: 10%;
-                    margin-bottom: 2%;
+#datepicker     {   font-size: 10px;}
+.ui-datepicker	{	margin: auto;}
+
+#color_wheel    {  	margin-top: 3%;                 
+                    margin-bottom: 10%;
+					text-align: center;
 }
 #swatch         {   height: 180px;
                     width: 140px;
                     background-color: #30a321;
                     position: relative;
-                    margin-top: -100%;
-                    margin-right: 20%;
+					margin: auto;
 }
 #results        {   font-size: .7em;
                     text-align: center;
 }
 #dialog         {   text-align: center;}
-
-.slider         {   width: 70%;
-                    opacity: 1;
-                    display: inline-block;
-}
+	
 
 .slider:hover   {   opacity: 0.8;
-}
-.skin_color     {   width: 15em;
+	}
+.skin_color     {	display: inline-block;
                     margin-top: 3px;
+					text-align: center;
+					font-size: 5vw
+}
+#color			{	text-align: center;
+					font-size: 4vw;
 }
 .radio_buttons  {   display: flex;
                     justify-content: space-around;
                     flex-wrap: wrap;
                     gap: 10px;
-}
+	}
 .spinner_controls  {    display: flex;
                         justify-content: space-around;
                         flex-wrap: wrap;
                         gap: 8px;
                         margin-left: -25px;
-}
+						margin-top: 5%;
+						margin-bottom: 10%	
+	}
 .align_label    {   text-align: right;
                     display: inline-block;
                     width: 8em;
-}
-.date_label    {    text-align: right;
+	}
+.date_label    {    text-align: center;
                     display: inline-block;
-                    width: 8em;
-                    margin-top: 60px;
-                    margin-bottom: 60px;
-                    margin-left: 30px;
+                    font-size: 6vw;
+					font-weight: bold;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+
 }
 .mask           {   height: 200px;
                     z-index: 2;
                     position: relative;
                     margin-top: -200px;
-}
-.alien_skin     {   float: right;
-                    margin-right: 10%;
-}
+	}
+.alien_skin     {	text-align: center;              	
+	}
 .spinner        {   width: 50px;}
 
-fieldset         {  margin-bottom: 10px;
-                    border-radius: 50px;             
-}
-legend          {   margin-left: 40px;}
+fieldset        {	margin: 7% 2% 7% 2%;
+					border-radius: 50px;             
+	}
+legend          {   margin-left: 12%;}
 
-h3              {   margin-bottom: 3px;
-                    margin-top: 3px;
+h3              {   margin-bottom: 5%;
+                    margin-top: 9%;
 }
 h1              {   text-align: center;}
 p               {   margin-top: 0;
@@ -83,18 +87,23 @@ p               {   margin-top: 0;
 }
 li              {   list-style: none;
                     margin-top: 5px;
-
-                    display: inline;
+					display: inline;
 }
 ul              {   margin-left: -30px;}
+.slider_label	{	margin-top: 6%;
+					font-size: 5vw;
+}
+
 span            {   font-weight: bold;
 }
-button          {   clear: both;
-                    margin-left: 40%;
-                    margin-top: 20px;
+#feet			{	font-size: 5vw;}
+#pounds			{	font-size: 5vw;}
+button          {   margin-top: 10%;}
+.button_box		{	display: block;
+					text-align: center;
 }
 form            {   background-color: #906bff;
-                    padding: 20px;
+                    padding: 0px;
                     border: 20px solid #c0c0c0;
                     border-radius: 50px;
 }
@@ -103,12 +112,159 @@ body            {   background-image: url(images/sky_9.jpg);
                     background-size: cover;
 }
 header          {   width: 80%;
-                    height: 200px;
+                    height: 100px;
                     margin: auto;
                     background-image: url(images/headline_2.png);
                     background-repeat: no-repeat;
                     background-size: contain;
+}
+
+
+@media (min-width: 500px) {
+	header 			{	height: 145px;}
+}
+
+
+@media (min-width: 720px) {
+	#wrapper        {   width: 80%;
+                    	margin: auto;
+	}
+
+	#datepicker     {   font-size: 10px;
+                    	float: right;
+                    	margin-right: 5vw;
+	}
+	.date_label		{	float: left;
+						margin-left: 1.1vw;
+						font-size: 2.8vw;
+	}
+	#date			{	font-size: 2.5vw;}
+	
+	#color_wheel    {   margin-top: 3%;
+                    	margin-left: 6vw;
+                    	text-align: left;
+	}
+	#swatch         {   height: 180px;
+                    	width: 140px;
+                    	background-color: #30a321;
+                    	position: relative;
+                    	margin-top: -100%;
+                    	margin-right: 20%;
+	}
+	#results        {   font-size: .7em;
+                    	text-align: center;
+	}
+	#dialog         {   text-align: center;}
+
+	.slider         {   width: 70%;
+                    	opacity: 1;
+                    	display: inline-block;
+	}
+
+	.slider:hover   {   opacity: 0.8;
+	}
+	.skin_color     {  display: inline-block; 
+                    	margin-top: -1%;
+						font-size: 4vw;
+	}
+	#color			{	font-size: 3vw;}
+	
+	.radio_buttons  {   display: flex;
+                    	justify-content: space-around;
+                    	flex-wrap: wrap;
+                    	gap: 10px;
+	}
+	.spinner_controls  {    display: flex;
+                        	justify-content: space-around;
+                        	flex-wrap: wrap;
+                        	gap: 8px;
+                        	margin-left: -25px;
+	}
+	.align_label    {   text-align: right;
+                    	display: inline-block;
+                    	width: 8em;
+						font-size: 2.4vw
+	}
+	.date_label    {    text-align: right;
+                    	display: inline-block;
+                    	width: 8em;
+                    	margin-top: 60px;
+                    	margin-bottom: 60px;
+                    	margin-left: 30px;
+	}
+	.mask           {   height: 200px;
+                    	z-index: 2;
+                    	position: relative;
+                    	margin-top: -200px;
+	}
+	.alien_skin     {   float: right;
+                    	margin-right: 8%;
+						margin-top: -10%
+	}
+	.spinner        {   width: 50px;}
+
+	fieldset        {	margin-bottom: 10px;
+						border-radius: 50px;             
+	}
+	legend          {   margin-left: 10%;}
+
+	h3              {   margin-bottom: 10px;
+                    	margin-top: 5px;
+	}
+	h1              {   text-align: center;}
+	p               {   margin-top: 0;
+                    	text-align: center;
+	}
+	li              {   list-style: none;
+                    	margin-top: 5px;
+						display: inline;
+	}
+	ul              {   margin-left: -30px;}
+	.slider_label	{	font-size: 2.4vw;
+						text-align: right;
+						display: inline-block;
+						width: 7.5em;
+	}
+	span            {   font-weight: bold;}
+	#feet			{	font-size: 4vw;}
+	#pounds			{	font-size: 4vw;}
+	
+	form            {   background-color: #906bff;
+                    	padding: 0px;
+                    	border: 20px solid #c0c0c0;
+                    	border-radius: 50px;
+	}
+	body            {   background-image: url(images/sky_9.jpg);
+                    	background-repeat: no-repeat;
+                    	background-size: cover;
+	}
+	header          {   width: 80%;
+                    	height: 175px;
+                    	margin: auto;
+                    	background-image: url(images/headline_2.png);
+                    	background-repeat: no-repeat;
+                    	background-size: contain;
                 }
+}
+
+
+@media (min-width: 950px) {
+	header 			{	height:210px;}
+	#wrapper        {   width: 70%;
+                    	margin: auto;
+	}
+	.slider         {   width: 70%;
+                    	opacity: 1;
+                    	display: inline-block;
+	}
+	.slider_label	{	font-size: 2.2vw;
+	}
+	#feet			{	font-size: 3.5vw;}
+	#pounds			{	font-size: 3.5vw;}
+
+
+}
+	
 /*#opener         {   clear: both;      See your comments in the other files
                     margin-left: 40%;
                     margin-top: 20px;

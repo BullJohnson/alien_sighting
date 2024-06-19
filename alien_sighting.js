@@ -2,10 +2,21 @@
 
                 // William S. Johnson, Jr | 11-18-23 | DPR214 - jQuery Plugins
 
+let dialogWidth, screenWidth;
 
 // Audio Constructor for sound effects.
 let fadeIn = new Audio("images/fade_in.wav");
 let fadeOut = new Audio("images/fade_out_b.mp4");
+
+//function to adjust dialob box to fit mobile device
+function determineBoxWidth () {
+    screenWidth = window.screen.width;
+    if (screenWidth < 500) {
+        dialogWidth = screenWidth * .9;
+    } else {
+        dialogWidth = 465;
+    }
+};
 
 //Functions to add value to span elements, when Height & Weight Sliders are moved
 function creatureWeight() {
@@ -53,6 +64,7 @@ function collectData() {
 
 
 $(document).ready( () =>{
+    determineBoxWidth();
 
     //Initialize Color Picker For Alien Skin Tone
     var colorPicker = new iro.ColorPicker('#color_wheel',{
@@ -95,7 +107,8 @@ $(document).ready( () =>{
        //$("#opener").button();         is to either use an input, with type="button" or simply name 
         $("#dialog").dialog({           //the object and issue a preventDefault.  I have included the
             autoOpen: false,                //alternte solution and commented it out.
-            width: 465,
+            //width: 465,
+            width: dialogWidth,
             hide: { effect: "bounce", times: 5, distance: 150},
             show: ("highlight",{color:"#ffffff"}, 2000),
             close: function() {

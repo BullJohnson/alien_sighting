@@ -21,9 +21,13 @@
                 <fieldset>
                     <legend>When Did You See It?</legend>
 
-                    <label for="date" class="date_label">Date of Sighting:</label>
-                    <input type="text" id="date" size="10">
-                    <div id="datepicker"></div>
+                    <label for="date" class="date_label">
+						Date of Sighting:
+                    	<input type="text" id="date" size="10">
+					</label>
+					<div class="datepicker_box">
+                    	<div id="datepicker"></div>
+					</div>
                 </fieldset>
 
                 <fieldset>
@@ -55,11 +59,11 @@
                     <legend>Alien Description</legend>
 
                     <br>
-                    <label for="weight" class="align_label">Weight in Pounds:</label>
+                    <label for="weight" class="slider_label">Weight in Pounds:</label>
                     <div id="weight" name="weight" class="slider"></div>
                     <p><span id="pounds">50</span>&nbsp;lbs.</p>
                     
-                    <label for="height" class="align_label">Height in Feet:</label>
+                    <label for="height" class="slider_label">Height in Feet:</label>
                     <div id="height" name="height" class="slider"></div>
                     <p><span id="feet">2</span>&nbsp;ft.</p>
                     <br>
@@ -85,12 +89,16 @@
                         <img src="images/alien_swatch_b.png" alt="alien swatch" class="mask">
                     </div>
 
-                    <label for="color" class="skin_color">Predominant Color of Alien:</label>
-                    <input type="text" name="color" id="color" value="#30a321" disabled>
+                    <label for="color" class="skin_color">
+						Predominant Color of Alien:
+                    	<input type="text" name="color" id="color" value="#30a321" disabled>
+					</label>
                     <br>
+					<div class="button_box">
                     <button id="opener">Submit Report</button>
                     <!--button tries to submit. Either cancel default or use line below, instead-->
                     <!--<input type="button" id="opener" value="Submit Report"></input>-->
+					</div>
                     <div id="dialog" title="Your Sighting Has Been Registered">
                         <div id="results"></div>
                     </div>
